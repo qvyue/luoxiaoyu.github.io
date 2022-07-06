@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[121],{8070:e=>{e.exports=JSON.parse('[{"label":"Demo","permalink":"/luoxiaoyu.github.io/tags/demo","count":1},{"label":"Getting started","permalink":"/luoxiaoyu.github.io/tags/getting-started","count":1}]')}}]);
