@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7592],{1533:t=>{t.exports=JSON.parse('{"label":"Getting started","permalink":"/tags/getting-started","allTagsPath":"/tags","count":1,"items":[{"id":"tutorial/greeting","title":"Hello","description":"\u6765\u81ea Docusaurus \u7684\u95ee\u5019","permalink":"/tutorial/greeting"}]}')}}]);
