@@ -1,7 +1,7 @@
 ---
-id: mysql-update-query
-title: MySQL UPDATE 更新
-sidebar_position: 15
+id: regex-intro
+title: 正则表达式简介
+sidebar_position: 1
 --- 
 
 # 正则表达式简介
