@@ -80,6 +80,12 @@ const config = {
             label: 'MySQL 教程',
           },
           {
+            type: 'doc',
+            docId: 'regex/regex-intro',
+            position: 'left',
+            label: '正则表达式 教程',
+          },
+          {
             href: 'https://qvyue.github.io/markdown-page',
             label: 'About Me',
             position: 'right',
