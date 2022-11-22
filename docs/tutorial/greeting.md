@@ -1,7 +1,7 @@
 ---
 id: greeting
 title: Hello
-sidebar_position: 2
+sidebar_position: 1
 tags:
   - Demo
   - Getting started

@@ -6,10 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://qvyue.github.io/luoxiaoyu.github.io/',
-  baseUrl: 'https://qvyue.github.io/luoxiaoyu.github.io/',
+  title: '老司机教程',
+  tagline: '让天下没有难学的技术',
+  url: 'https://qvyue.github.io/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'qvyue', // Usually your GitHub org/user name.
-  projectName: 'luoxiaoyu.github.io', // Usually your repo name.
+  projectName: 'qvyue.github.io', // Usually your repo name.
   deploymentBranch: 'github-pages',
   trailingSlash: false,
 
@@ -35,19 +35,15 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
+          // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/qvyue/luoxiaoyu.github.io/tree/github-pages/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false, // Optional: disable the blog plugin
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -67,19 +63,29 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'tutorial/intro',
+            docId: 'tutorial/greeting',
             position: 'left',
             label: 'Tutorial',
           },
-		  {
+          {
             type: 'doc',
             docId: 'api/api',
             position: 'left',
             label: 'API',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'doc',
+            docId: 'mysql/mysql-tutorial',
+            position: 'left',
+            label: 'MySQL 教程',
+          },
+          {
+            href: 'https://qvyue.github.io/markdown-page',
+            label: 'About Me',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/qvyue/qvyue.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -93,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: 'tutorial/greeting',
               },
             ],
           },
@@ -133,13 +139,14 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['php', 'java'],
       },
-	  docs: {
-		sidebar: {
-			autoCollapseCategories: true,
-			hideable: true,
-		},
-	  },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+          hideable: true,
+        },
+      },
     }),
 };
 module.exports = config;
